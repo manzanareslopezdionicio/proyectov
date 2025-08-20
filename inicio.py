@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 
 app=Flask(__name__)
-
+# Configuración de la aplicación Flask
 @app.route('/')
 def inicio():
     return render_template('index.html')
