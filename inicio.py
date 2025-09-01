@@ -10,6 +10,10 @@ def inicio():
 def acercade():
     return render_template('acercade.html')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
 @app.route('/contacto', methods=['GET', 'POST'])
 def contacto():
     user={ #Diccionario de contacto|

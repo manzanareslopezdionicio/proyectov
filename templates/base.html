@@ -16,15 +16,15 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <nav class="navbar bg-primary navbar-expand-lg ">
+    <nav class="navbar bg-secondary navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Sistema de inventarios</a>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="navbar-brand" href="#">SISTEMA</a>
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{{ url_for('inicio') }}">inicio</a>
             </li>
@@ -35,6 +35,7 @@
               <a class="nav-link" href="{{ url_for('acercade') }}">acerca de</a>
             </li>
           </ul>
+          
         </div>
       </div>
     </nav>
