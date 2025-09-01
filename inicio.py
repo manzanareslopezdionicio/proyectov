@@ -6,6 +6,10 @@ app=Flask(__name__)
 def inicio():
     return render_template('index.html')
 
+@app.route('/acercade')
+def acercade():
+    return render_template('acercade.html')
+
 @app.route('/contacto', methods=['GET', 'POST'])
 def contacto():
     user={ #Diccionario de contacto|

@@ -1,1 +1,55 @@
-<h1>Bienvenidos a la pagina principal</h1>
+{% extends 'base.html' %}
+{% block titulo %}Sistema de inventarios{% endblock %}
+
+{% block body %}
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" data-bs-interval="2000">
+    <div class="carousel-item active">
+      <img src="{{url_for('static', filename='img/imagen1.jpg')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{{url_for('static', filename='img/imagen2.jpg')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{{url_for('static', filename='img/imagen3.jpg')}}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo et tenetur. Impedit facilis et
+        voluptates explicabo error suscipit? Non aliquid tempora recusandae quos, consequuntur aspernatur tenetur in
+        ipsum repudiandae.</p>
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo et tenetur. Impedit facilis et
+        voluptates explicabo error suscipit? Non aliquid tempora recusandae quos, consequuntur aspernatur tenetur in
+        ipsum repudiandae. </p>
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, doloremque sed quisquam, maxime esse eligendi
+        voluptates cumque ut nobis earum consequuntur non voluptatem quibusdam nulla, repellendus minus? Perspiciatis,
+        nobis facere!</p>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
