@@ -14,6 +14,10 @@ def acercade():
 def login():
     return render_template('login.html')
 
+@app.route('/registro')
+def registro():
+    return render_template('registro.html')
+
 @app.route('/contacto', methods=['GET', 'POST'])
 def contacto():
     user={ #Diccionario de contacto|
